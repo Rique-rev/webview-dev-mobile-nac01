@@ -29,15 +29,15 @@ public class MainActivity extends AppCompatActivity {
 
 
         //push user to my sites page
-        Boolean right_username = true ? user_name.equals("nac01") : false;
+//        Boolean right_username = true ? user_name.equals("nac01") : false;
         Boolean right_password = true ? user_password_int == 12345 : false;
 
-        if(right_username && right_password){
+        if(right_password){
             Intent intent = new Intent(this,MySites.class);
             intent.putExtra("username",user_name);
             startActivity(intent);
         }else{
-            Toast.makeText(this, "Usuário e/ou senha errado(s)!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Senha correta: 12345!", Toast.LENGTH_SHORT).show();
         }
 
     }

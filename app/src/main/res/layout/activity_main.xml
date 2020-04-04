@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:background="@drawable/background2">
+    android:background="@drawable/background">
 
 
     <TextView
@@ -55,7 +55,7 @@
         android:background="@android:color/white"
         android:onClick="getUserInfo"
         android:text="Login"
-        android:textColor="#0000b3"
+        android:textColor="#660066"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
 

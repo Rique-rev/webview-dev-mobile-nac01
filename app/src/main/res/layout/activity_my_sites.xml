@@ -21,6 +21,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_centerInParent="false"
+            android:textColor="@android:color/white"
             android:textSize="34sp" />
 
         <GridLayout
@@ -34,7 +35,6 @@
             android:layout_marginTop="269dp"
             android:layout_marginEnd="41dp"
             android:layout_marginBottom="271dp"
-            android:layout_weight="8"
             android:columnCount="4"
             android:columnOrderPreserved="false"
             android:paddingTop="50dp"
@@ -42,17 +42,19 @@
 
 
             <ImageButton
-                android:id="@+id/imageButton6"
+                android:id="@+id/btnFiap"
                 android:layout_width="78dp"
                 android:layout_height="78dp"
                 android:layout_row="1"
                 android:layout_column="1"
                 android:background="@null"
                 android:scaleType="fitCenter"
-                app:srcCompat="@drawable/fiap_logo" />
+                android:visibility="visible"
+                app:srcCompat="@drawable/fiap_logo"
+                tools:visibility="visible" />
 
             <ImageButton
-                android:id="@+id/imageButton12"
+                android:id="@+id/btnGithub"
                 style="@android:style/Widget.ImageButton"
                 android:layout_width="78dp"
                 android:layout_height="78dp"
@@ -60,28 +62,34 @@
                 android:layout_column="2"
                 android:background="@null"
                 android:scaleType="fitCenter"
-                app:srcCompat="@drawable/github_logo" />
+                android:visibility="visible"
+                app:srcCompat="@drawable/github_logo"
+                tools:visibility="visible" />
 
             <ImageButton
-                android:id="@+id/imageButton14"
+                android:id="@+id/btnYoutube"
                 android:layout_width="86dp"
                 android:layout_height="83dp"
                 android:layout_row="1"
                 android:layout_column="3"
                 android:background="@null"
                 android:scaleType="fitCenter"
+                android:visibility="visible"
                 app:srcCompat="@drawable/youtube_logo"
-                tools:srcCompat="@drawable/youtube_logo" />
+                tools:srcCompat="@drawable/youtube_logo"
+                tools:visibility="visible" />
 
             <ImageButton
-                android:id="@+id/imageButton8"
+                android:id="@+id/btnFacebook"
                 android:layout_width="75dp"
                 android:layout_height="75dp"
                 android:layout_row="1"
                 android:layout_column="0"
                 android:background="@null"
                 android:scaleType="fitCenter"
-                app:srcCompat="@drawable/facebook_logo2" />
+                android:visibility="visible"
+                app:srcCompat="@drawable/facebook_logo2"
+                tools:visibility="visible" />
         </GridLayout>
 
 
