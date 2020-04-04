@@ -4,32 +4,42 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@drawable/background2">
+
 
     <TextView
         android:id="@+id/txtLogo"
         android:layout_width="217dp"
         android:layout_height="40dp"
         android:layout_marginTop="80dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Login"
         android:textAlignment="center"
-        android:textColor="@android:color/black"
+        android:textColor="@android:color/white"
         android:textSize="30sp"
+        android:typeface="sans"
         app:layout_constraintBottom_toTopOf="@+id/txtUsuario"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.335"
-        android:text="Login"
-        tools:text="Login" />
+        tools:text="MY SITES" />
 
     <EditText
         android:id="@+id/txtUsuario"
+        style="@android:style/Widget.AutoCompleteTextView"
         android:layout_width="215dp"
         android:layout_height="48dp"
         android:autofillHints=""
         android:ems="10"
         android:hint="@string/usuario"
         android:inputType="textPersonName"
+        android:lineSpacingExtra="8sp"
+        android:selectAllOnFocus="false"
+        android:singleLine="false"
+        android:textColor="@android:color/white"
+        android:typeface="sans"
         app:layout_constraintBottom_toTopOf="@+id/pswLogin"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.505"
@@ -39,29 +49,33 @@
 
     <Button
         android:id="@+id/btLogin"
+        style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="207dp"
         android:layout_height="49dp"
+        android:background="@android:color/white"
+        android:onClick="getUserInfo"
         android:text="Login"
-        android:textSize="18sp"
+        android:textColor="#0000b3"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
+
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/pswLogin"
-        android:onClick="getUserInfo"
-
-        />
+        app:layout_constraintTop_toBottomOf="@+id/pswLogin" />
 
     <EditText
         android:id="@+id/pswLogin"
         android:layout_width="215dp"
         android:layout_height="48dp"
         android:ems="10"
+        android:fontFamily="sans-serif"
         android:hint="@string/senha"
+        android:importantForAutofill="no"
         android:inputType="numberPassword"
+        android:textColor="@android:color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.505"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:importantForAutofill="no" />
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

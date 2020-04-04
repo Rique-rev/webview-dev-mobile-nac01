@@ -1,20 +1,91 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/txtUserName"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MySites">
+    android:orientation="vertical"
+    tools:context=".MySites"
+    android:background="@drawable/background"
+    >
 
-    <TextView
-        android:id="@+id/txtWelcomeMsg"
-        android:layout_width="313dp"
-        android:layout_height="33dp"
-        android:text=""
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.09" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2">
+
+        <TextView
+            android:id="@+id/txtWelcomeMsg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="false"
+            android:textSize="34sp" />
+
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="146dp"
+            android:layout_below="@+id/txtWelcomeMsg"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="269dp"
+            android:layout_marginEnd="41dp"
+            android:layout_marginBottom="271dp"
+            android:layout_weight="8"
+            android:columnCount="4"
+            android:columnOrderPreserved="false"
+            android:paddingTop="50dp"
+            android:rowCount="3">
+
+
+            <ImageButton
+                android:id="@+id/imageButton6"
+                android:layout_width="78dp"
+                android:layout_height="78dp"
+                android:layout_row="1"
+                android:layout_column="1"
+                android:background="@null"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/fiap_logo" />
+
+            <ImageButton
+                android:id="@+id/imageButton12"
+                style="@android:style/Widget.ImageButton"
+                android:layout_width="78dp"
+                android:layout_height="78dp"
+                android:layout_row="1"
+                android:layout_column="2"
+                android:background="@null"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/github_logo" />
+
+            <ImageButton
+                android:id="@+id/imageButton14"
+                android:layout_width="86dp"
+                android:layout_height="83dp"
+                android:layout_row="1"
+                android:layout_column="3"
+                android:background="@null"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/youtube_logo"
+                tools:srcCompat="@drawable/youtube_logo" />
+
+            <ImageButton
+                android:id="@+id/imageButton8"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_row="1"
+                android:layout_column="0"
+                android:background="@null"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/facebook_logo2" />
+        </GridLayout>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>
