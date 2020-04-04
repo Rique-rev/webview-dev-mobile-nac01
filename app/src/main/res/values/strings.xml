@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">webview_app</string>
+    <string name="textview">TextView</string>
+    <string name="button">Button</string>
+    <string name="name">Name</string>
+    <string name="name">Name</string>
+    <string name="senha">Senha</string>
+    <string name="usuario">Usuário</string>
+</resources>
