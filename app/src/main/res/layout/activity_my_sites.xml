@@ -17,83 +17,77 @@
         android:layout_weight="2">
 
         <TextView
+            android:layout_marginTop="20dp"
             android:id="@+id/txtWelcomeMsg"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_centerInParent="false"
+            android:textAlignment="center"
             android:textColor="@android:color/white"
-            android:textSize="34sp" />
-
-        <GridLayout
-            android:layout_width="wrap_content"
-            android:layout_height="146dp"
-            android:layout_below="@+id/txtWelcomeMsg"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginStart="48dp"
-            android:layout_marginTop="269dp"
-            android:layout_marginEnd="41dp"
-            android:layout_marginBottom="271dp"
-            android:columnCount="4"
-            android:columnOrderPreserved="false"
-            android:paddingTop="50dp"
-            android:rowCount="3">
+            android:textSize="20sp"
+            android:textStyle="bold" />
 
 
-            <ImageButton
-                android:id="@+id/btnFiap"
-                android:layout_width="78dp"
-                android:layout_height="78dp"
-                android:layout_row="1"
-                android:layout_column="1"
-                android:background="@null"
-                android:scaleType="fitCenter"
-                android:visibility="visible"
-                app:srcCompat="@drawable/fiap_logo"
-                tools:visibility="visible" />
-
-            <ImageButton
-                android:id="@+id/btnGithub"
-                style="@android:style/Widget.ImageButton"
-                android:layout_width="78dp"
-                android:layout_height="78dp"
-                android:layout_row="1"
-                android:layout_column="2"
-                android:background="@null"
-                android:scaleType="fitCenter"
-                android:visibility="visible"
-                app:srcCompat="@drawable/github_logo"
-                tools:visibility="visible" />
-
-            <ImageButton
-                android:id="@+id/btnYoutube"
-                android:layout_width="86dp"
-                android:layout_height="83dp"
-                android:layout_row="1"
-                android:layout_column="3"
-                android:background="@null"
-                android:scaleType="fitCenter"
-                android:visibility="visible"
-                app:srcCompat="@drawable/youtube_logo"
-                tools:srcCompat="@drawable/youtube_logo"
-                tools:visibility="visible" />
-
-            <ImageButton
-                android:id="@+id/btnFacebook"
-                android:layout_width="75dp"
-                android:layout_height="75dp"
-                android:layout_row="1"
-                android:layout_column="0"
-                android:background="@null"
-                android:scaleType="fitCenter"
-                android:visibility="visible"
-                app:srcCompat="@drawable/facebook_logo2"
-                tools:visibility="visible" />
-        </GridLayout>
 
 
     </RelativeLayout>
 
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="146dp"
+        android:layout_below="@+id/txtWelcomeMsg"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="269dp"
+        android:layout_marginEnd="41dp"
+        android:layout_marginBottom="271dp"
+        android:columnCount="4"
+        android:columnOrderPreserved="false"
+        android:paddingTop="50dp"
+        android:rowCount="3">
 
+
+        <ImageButton
+            android:id="@+id/btnFiap"
+            android:layout_width="78dp"
+            android:layout_height="78dp"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:background="@null"
+            android:scaleType="fitCenter"
+            android:src="@drawable/fiap_logo" />
+
+        <ImageButton
+            android:id="@+id/btnGithub"
+            android:layout_width="78dp"
+            android:layout_height="78dp"
+            android:layout_row="1"
+            android:layout_column="2"
+            android:background="@null"
+            android:scaleType="fitCenter"
+            android:src="@drawable/github_logo" />
+
+        <ImageButton
+            android:id="@+id/btnYoutube"
+            android:layout_width="86dp"
+            android:layout_height="83dp"
+            android:layout_row="1"
+            android:layout_column="3"
+            android:background="@null"
+            android:scaleType="fitCenter"
+            android:src="@drawable/youtube_logo"
+            />
+
+        <ImageButton
+            android:id="@+id/btnFacebook"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:background="@null"
+            android:scaleType="fitCenter"
+            android:src="@drawable/facebook_logo2" />
+    </GridLayout>
 </LinearLayout>
