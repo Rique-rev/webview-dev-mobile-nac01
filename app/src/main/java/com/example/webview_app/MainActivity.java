@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
             intent.putExtra("username",user_name);
             startActivity(intent);
         }else{
-            Toast.makeText(this, "Senha correta: 12345!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Senha correta: 12345", Toast.LENGTH_SHORT).show();
         }
 
     }
