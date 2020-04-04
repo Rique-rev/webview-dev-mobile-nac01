@@ -40,6 +40,7 @@
 
         <ImageButton
             android:id="@+id/btnFiap"
+            android:onClick="FiapSite"
             android:layout_width="78dp"
             android:layout_height="78dp"
             android:layout_row="1"
@@ -50,6 +51,7 @@
 
         <ImageButton
             android:id="@+id/btnGithub"
+            android:onClick="GithubSite"
             android:layout_width="78dp"
             android:layout_height="78dp"
             android:layout_row="1"
@@ -60,6 +62,7 @@
 
         <ImageButton
             android:id="@+id/btnYoutube"
+            android:onClick="YoutubeSite"
             android:layout_width="86dp"
             android:layout_height="83dp"
             android:layout_row="1"
@@ -71,6 +74,7 @@
 
         <ImageButton
             android:id="@+id/btnFacebook"
+            android:onClick="FacebookSite"
             android:layout_width="75dp"
             android:layout_height="75dp"
             android:layout_row="1"

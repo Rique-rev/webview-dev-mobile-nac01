@@ -3,6 +3,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.webkit.WebView;
 import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -19,6 +20,12 @@ public class MySites<S> extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_my_sites);
 
+        //Setting images buttons
+        btnFiap = (ImageButton) findViewById(R.id.btnFiap);
+        btnFacebook = (ImageButton) findViewById(R.id.btnFacebook);
+        btnGitHub = (ImageButton) findViewById(R.id.btnGithub);
+        btnYoutube = (ImageButton) findViewById(R.id.btnYoutube);
+
         //receive intent from activityMain and get username
         Intent intent = getIntent();
         String username = intent.getStringExtra("username");
@@ -30,37 +37,36 @@ public class MySites<S> extends AppCompatActivity {
         TextView lbWelcome = findViewById(R.id.txtWelcomeMsg);
         lbWelcome.setText(welcome_msg);
 
+    }
 
-        //Setting images buttons
-        btnFiap = (ImageButton) findViewById(R.id.btnFiap);
-        btnFacebook = (ImageButton) findViewById(R.id.btnFacebook);
-        btnGitHub = (ImageButton) findViewById(R.id.btnGithub);
-        btnYoutube = (ImageButton) findViewById(R.id.btnYoutube);
 
-        //Button functions
-        btnFiap.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                Toast.makeText(MySites.this, "FIAP", Toast.LENGTH_SHORT).show();
-            }
-        });
+    public void FiapSite(View view){
+        String url = "https://www.fiap.com.br/";
+        Intent intent = new Intent(this, WebActivity.class);
+        intent.putExtra("url",url);
+        startActivity(intent);
+    }
 
-        btnFacebook.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                Toast.makeText(MySites.this, "FACEBOOK", Toast.LENGTH_SHORT).show();
-            }
-        });
+    public void FacebookSite(View view){
+        String url = "https://pt-br.facebook.com/";
 
-        btnGitHub.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                Toast.makeText(MySites.this, "GITHUB", Toast.LENGTH_SHORT).show();
-            }
-        });
 
-        btnYoutube.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                Toast.makeText(MySites.this, "YOUTUBE", Toast.LENGTH_SHORT).show();
-            }
-        });
+        Intent intent = new Intent(this, WebActivity.class);
+        intent.putExtra("url",url);
+        startActivity(intent);
+    }
+    public void GithubSite(View view){
+        String url = "https://github.com/";
+        Intent intent = new Intent(this, WebActivity.class);
+        intent.putExtra("url",url);
+        startActivity(intent);
+    }
+
+    public void YoutubeSite(View view){
+        String url = "https://www.youtube.com/";
+        Intent intent = new Intent(this, WebActivity.class);
+        intent.putExtra("url",url);
+        startActivity(intent);
     }
 
 }

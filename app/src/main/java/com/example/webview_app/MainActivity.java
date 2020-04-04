@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
 
 
         //push user to my sites page
-//        Boolean right_username = true ? user_name.equals("nac01") : false;
+        //Boolean right_username = true ? user_name.equals("nac01") : false;
         Boolean right_password = true ? user_password_int == 12345 : false;
 
         if(right_password){
