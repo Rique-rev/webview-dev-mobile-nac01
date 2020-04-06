@@ -32,7 +32,7 @@
         android:layout_height="48dp"
         android:autofillHints=""
         android:ems="10"
-        android:hint="@string/usuario"
+        android:hint="Seu Nome"
         android:inputType="textPersonName"
         android:lineSpacingExtra="8sp"
         android:selectAllOnFocus="false"
