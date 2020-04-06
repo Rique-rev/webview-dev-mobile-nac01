@@ -69,4 +69,31 @@ public class MySites<S> extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void MercadoLivreSite(View view){
+        String url = "https://www.mercadolivre.com.br/";
+        Intent intent = new Intent(this, WebActivity.class);
+        intent.putExtra("url",url);
+        startActivity(intent);
+    }
+
+    public void BuscapeSite(View view){
+        String url = "https://www.buscape.com.br/";
+        Intent intent = new Intent(this, WebActivity.class);
+        intent.putExtra("url",url);
+        startActivity(intent);
+    }
+
+    public void MagaluSite(View view){
+        String url = "https://www.magazineluiza.com.br/?partner_id=24701&gclid=CjwKCAjwpqv0BRABEiwA-TySwVe0V3cvYSbCBlBH6mGVkAXRzOPDaiAsrZlE_A7Y2kC2Wn0O2g3jyxoCm8gQAvD_BwE";
+        Intent intent = new Intent(this, WebActivity.class);
+        intent.putExtra("url",url);
+        startActivity(intent);
+    }
+
+    public void EbaySite(View view){
+        String url = "https://br.ebay.com/";
+        Intent intent = new Intent(this, WebActivity.class);
+        intent.putExtra("url",url);
+        startActivity(intent);
+    }
 }

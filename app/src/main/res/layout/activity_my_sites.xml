@@ -23,7 +23,7 @@
 
     <GridLayout
         android:layout_width="wrap_content"
-        android:layout_height="146dp"
+        android:layout_height="208dp"
         android:layout_below="@+id/txtWelcomeMsg"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
@@ -40,47 +40,90 @@
 
         <ImageButton
             android:id="@+id/btnFiap"
-            android:onClick="FiapSite"
             android:layout_width="78dp"
             android:layout_height="78dp"
             android:layout_row="1"
             android:layout_column="1"
             android:background="@null"
+            android:onClick="FiapSite"
             android:scaleType="fitCenter"
             android:src="@drawable/fiap_logo" />
 
         <ImageButton
             android:id="@+id/btnGithub"
-            android:onClick="GithubSite"
             android:layout_width="78dp"
             android:layout_height="78dp"
             android:layout_row="1"
             android:layout_column="2"
             android:background="@null"
+            android:onClick="GithubSite"
             android:scaleType="fitCenter"
             android:src="@drawable/github_logo" />
 
         <ImageButton
             android:id="@+id/btnYoutube"
-            android:onClick="YoutubeSite"
             android:layout_width="86dp"
             android:layout_height="83dp"
             android:layout_row="1"
             android:layout_column="3"
             android:background="@null"
+            android:onClick="YoutubeSite"
             android:scaleType="fitCenter"
-            android:src="@drawable/youtube_logo"
-            />
+            android:src="@drawable/youtube_logo" />
 
         <ImageButton
             android:id="@+id/btnFacebook"
-            android:onClick="FacebookSite"
             android:layout_width="75dp"
             android:layout_height="75dp"
             android:layout_row="1"
             android:layout_column="0"
             android:background="@null"
+            android:onClick="FacebookSite"
             android:scaleType="fitCenter"
             android:src="@drawable/facebook_logo2" />
+
+        <ImageButton
+            android:id="@+id/btnBuscape"
+            android:layout_width="77dp"
+            android:layout_height="63dp"
+            android:layout_row="2"
+            android:layout_column="0"
+            android:background="@null"
+            android:onClick="BuscapeSite"
+            android:scaleType="fitCenter"
+            android:src="@drawable/buscape_logo" />
+
+        <ImageButton
+            android:id="@+id/btnEbay"
+            android:layout_width="86dp"
+            android:layout_height="75dp"
+            android:layout_row="2"
+            android:layout_column="3"
+            android:background="@null"
+            android:onClick="EbaySite"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ebay_icon" />
+
+        <ImageButton
+            android:id="@+id/btnMercadolivre"
+            android:layout_width="83dp"
+            android:layout_height="69dp"
+            android:layout_row="2"
+            android:layout_column="1"
+            android:background="@null"
+            android:onClick="MercadoLivreSite"
+            android:scaleType="fitCenter"
+            android:src="@drawable/mercado_livre_icon" />
+
+        <ImageButton
+            android:id="@+id/btnMagalu"
+            android:layout_width="79dp"
+            android:layout_height="71dp"
+            android:layout_row="2"
+            android:layout_column="2"
+            android:background="@null"
+            android:onClick="MagaluSite"
+            android:scaleType="fitCenter"
+            android:src="@drawable/magalu_logo" />
     </GridLayout>
 </LinearLayout>
