@@ -41,4 +41,9 @@ public class MainActivity extends AppCompatActivity {
         }
 
     }
+
+    public void Info(View view){
+        Intent intent = new Intent(this, InfoActivity.class);
+        startActivity(intent);
+    }
 }
