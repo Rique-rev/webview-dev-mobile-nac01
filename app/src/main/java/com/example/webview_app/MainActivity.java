@@ -27,16 +27,16 @@ public class MainActivity extends AppCompatActivity {
         String user_password_str = password.getText().toString();
         Integer user_password_int = Integer.valueOf(user_password_str);
 
-
-        //push user to my sites page
-        //Boolean right_username = true ? user_name.equals("nac01") : false;
+        //check fields
         Boolean right_password = true ? user_password_int == 12345 : false;
 
         if(right_password){
+            //push user to my sites page
             Intent intent = new Intent(this,MySites.class);
             intent.putExtra("username",user_name);
             startActivity(intent);
-        }else{
+        }
+        else{
             Toast.makeText(this, "Senha correta: 12345", Toast.LENGTH_SHORT).show();
         }
 
