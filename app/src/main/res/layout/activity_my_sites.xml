@@ -29,8 +29,7 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_marginStart="48dp"
-        android:layout_marginTop="150dp"
-        android:layout_marginEnd="41dp"
+        android:layout_marginTop="100dp"
         android:layout_marginBottom="271dp"
         android:columnCount="4"
         android:columnOrderPreserved="false"
@@ -125,5 +124,7 @@
             android:onClick="MagaluSite"
             android:scaleType="fitCenter"
             android:src="@drawable/magalu_logo" />
+
     </GridLayout>
+
 </LinearLayout>

@@ -39,7 +39,6 @@ public class MySites<S> extends AppCompatActivity {
 
     }
 
-
     public void FiapSite(View view){
         String url = "https://www.fiap.com.br/";
         Intent intent = new Intent(this, WebActivity.class);
